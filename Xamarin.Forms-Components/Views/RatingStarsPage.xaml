@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:components="clr-namespace:Xamarin.FormsComponents;assembly=Xamarin.Forms-Components" x:Class="Xamarin.FormsComponents.RatingStarsPage">
+	<ContentPage.Content>
+		<StackLayout Orientation="Vertical" Padding="10">
+			<Slider Maximum="10" Minimum="0" Value="{Binding Rating, Mode=TwoWay}"/>
+			<components:RatingStars Rating="{Binding Rating}" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
